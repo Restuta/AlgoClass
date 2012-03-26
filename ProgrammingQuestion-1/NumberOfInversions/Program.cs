@@ -55,34 +55,10 @@ namespace NumberOfInversions
                     inputArray[k] = right[j];
                     j++;
 
-
+                    numberOfInversions += left.Length - i;
                 }
                 k++;
             }
-
-            //for (int k = 0; k < left.Length + right.Length; k++)
-            //{
-            //    if (left[i] < right[j])
-            //    {
-            //        if (i < left.Length - 1)
-            //        {
-            //            i++;
-            //        }
-            //    }
-            //    else if(left[i] > right[j])
-            //    {
-            //        if (j != right.Length - 1)
-            //        {
-            //            j++;
-            //            numberOfInversions += left.Length - i;
-            //        }
-            //        else
-            //        {
-            //            numberOfInversions += left.Length - i;
-            //            break;
-            //        }
-            //    }
-            //}
 
             return numberOfInversions;
         }
